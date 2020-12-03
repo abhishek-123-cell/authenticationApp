@@ -3,6 +3,7 @@ const router = express.Router()
 const apiController=require('../../controller/api/userApi');
 router.get("/",apiController.index)
 router.get("/login", () => {});
-router.get("/signup", () => {});
+router.post("/signup", apiController.signup);
 
 module.exports = router;
+// apiController.signup;
